@@ -36,7 +36,11 @@ module.exports = {
     projects: {
       collection: 'Project',
       via: 'company',
-    }
+    },
+    companyAuths: {
+      collection: 'companyauth',
+      via: 'companyId',
+    },
   },
 
 };

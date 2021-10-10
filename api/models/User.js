@@ -33,7 +33,11 @@ module.exports = {
       collection: 'company',
       via: 'userId',
       through: 'companyauth'
-    }
+    },
+    companyAuths: {
+      collection: 'companyauth',
+      via: 'userId',
+    },
   },
 
 };
