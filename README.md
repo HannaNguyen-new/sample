@@ -4,6 +4,15 @@ a [Sails v1](https://sailsjs.com) application
 
 
 ### Commands
+#### please first create .env file with below info
+```
+host=localhost
+port=<your db connection port>
+databaseName=sample
+user=<db user name>
+password=<db password>
+```
+#### Then,
 ```
 seedDB 
 ```
@@ -16,6 +25,14 @@ sails console with debug mode on, development environemt
 consoleStg 
 ```
 sails console with debug mode on, staging environemt
+
+### Test codes
+```
+Company.findOne({id:1}).populate('projects').then(res => console.log(res))
+```
+```
+Company.findOne({id:1}).populate('users').then(res => console.log(res))
+```
 
 ### Version info
 
