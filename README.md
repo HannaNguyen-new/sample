@@ -2,9 +2,17 @@
 
 a [Sails v1](https://sailsjs.com) application
 
-
-### Commands
-#### please first create .env file with below info
+### App Setup
+```
+git clone git@github.com:HannaNguyen-new/sample.git
+```
+```
+cd sample
+```
+```
+npm install
+```
+#### create .env file with below info
 ```
 host=localhost
 port=<your db connection port>
@@ -12,6 +20,8 @@ databaseName=sample
 user=<db user name>
 password=<db password>
 ```
+### Commands
+
 #### Then,
 seed DB for public & staging schemas 
 ```
